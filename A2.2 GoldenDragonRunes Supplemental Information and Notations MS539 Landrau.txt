@@ -1,0 +1,23 @@
+Dragons Health
+Gold
+
+https://chatgpt.com/c/6a4077cb-1078-83ea-867e-893394ea0e50
+https://www.perplexity.ai/search/35de101d-4b04-4517-937b-f8bc48f8448d
+
+
+Create: 
+Meadow Mountain as Starting Point
+Grasslands of Veda
+Shangri La
+The Hidden Oasis
+
+Note: ChatGPTs data limit was reached while creating these images and thereafter could not muster further creation of any files at all, not even imagery or audio.  Cap is set at approximately 4 to 5 items per 24 hour period.  This is the delimiting factor which delayed sufficient and adequate use of artificial intelligence within course parameters to complete this assignment as generated.  
+
+Note: Perplexity.AI could not generate audio or MP3 Files at it was against its actionability to be able to do so outside the context of doing a text-to-audio.  Therefore a alternate website using AI modeling was more proficiently used for this process. 
+
+https://www.giz.ai/ai-audio-generator/
+Create:
+Music (Homely Awakening and Humble Beginnings Music) 
+Music (Uplifting Transcendent Music)
+Music (Spiritual Battle Music)
+Music (Chinese - Oriental Flying High and Free Music)

@@ -1,0 +1,305 @@
+﻿namespace GoldenDragonRunes
+{
+    public partial class FrmStart : Form
+    {
+
+        //Create Our Variables to Hold our Data Sets
+
+        //Dragons Health
+        int playerHealth = 100;
+
+        //Money
+        int Gold = 100;
+        public FrmStart()
+        {
+            InitializeComponent();
+        }
+
+        //private void FrmStart_Load(Object Sender, EventArgs e)
+        //{
+        //  // Call the function we made to update health and credits of our user.
+        //  UpdateStats();
+
+        //  // This will not show until it runs
+
+        //  // Now lets set the first location of our dropdown locations
+        // comboLocations.Items.Add("Meadow Mountain");
+
+        //  // Now lets add another location of our user can go to
+        // comboLocations.Items.Add("Grasslands of Veda");
+
+	//  // Now lets add another location so our user can visit
+	// comboLocations.Item.Add("Shangri La")
+
+        //  // Now let's make our combobox select a default location so it is not empty
+        //comboLocations.SelectedIndex = 0;
+
+        //  // Now lets make our combobox select a default location so it is not empty
+        //lblStory.Text = "You have returned from the realm of the sages in Shangri La..... Now you must journey onwards overland towards Kemetic Alkebulan";
+
+        //}
+
+        //  Create a method that will update the stats
+
+        private void UpdateStats()
+        {
+            // This updates stuff on our gui for us
+            lblStats.Text = "Health: " + playerHealth.ToString() + " | Credits: " + Gold.toString();
+        }
+
+        private void comboLocations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Let's check and see what value is not selected
+            if (comboLocations.SelectedItem.ToString() == "Meadow Mountain")
+            {
+                // So let's change the background image to the user's newly selected location
+                this.BackgroundImage = 00000000000000000000000000000000000000000;
+
+                // Update our story so the user knows what is going on
+                lblStory.Text = "You have made the save journey to the Grasslands of Veda.  The monks welcome you and restore you to vigor and vitality!";
+	
+	//restore health to 100%
+	int playerHealth = 100;
+            }
+            else if (comboLocations_SelectedItem.ToString() == "Shangri La")
+            {
+                // So let's change the background image to the user's newly selected location
+                this.BackgroundImage = 0000000000000000000000000000000000000000000000000000;
+
+                // Update our story so the user knows what is going on
+                lblStory.Text = "You have used your spirit power to cross over to the other side of reality.  You have arrived in the nether-world of the Shangri La.";
+
+            }
+        }
+        private void FrmStart_Load(object sender, EventArgs e)
+        {
+            // Call the function we made to update health and credits of our user.
+            UpdateStats();
+
+            //  This will not show until it runs.
+
+            //  Now lets set the first location of our dropdown locations
+            comboLocations.Items.Add("Meadows of Veda");
+
+            //  Let's add another location our user can go to
+            comboLocations.Items.Add("The Hidden Oasis");
+
+            //  Now lets make our combobox select a default location so it is not empty
+            comboLocations.SelectedIndex = 0;
+
+            //  Now lets let our user know what is going on in the SIM
+            lblStory.Text = "Welcome to Earth!, please choose a destination on the spirit path to visit!.";
+
+
+        }
+ }
+
+        //create a method that will update the stats
+        private void UpdateStats()
+        {
+            //This updates stuff on our GUI for us
+            //This is taking our label controls called lblStats and setting its text property
+            lblStats.Text = "Health: " + playerHealth.ToString() + "| Gold: " + Gold.ToString();
+
+        }
+        // this handles the change of items in our combo box when our user changes to a new value
+        private void cmbLocations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //lets check values
+            if (cmbLocations.SelectedIndex.ToString() == "Meadow Mountain")
+            {
+                //change background image to users newly selected location
+                this.BackgroundImage = 00000000000000000000000000;
+
+                //update story for user
+                lblStory.Text = "You are now in the Meadows of the Mountains";
+
+
+                if (cmbLocations.SelectedIndex.ToString() == "Grasslands of Veda")
+                {
+                    //change background image to users newly selected location
+                    this.BackgroundImage = 0000000000000000000000000000000;
+
+                    //update story for user
+                    lblStory.Text = "The grasslands and temples are comforting and soothe the mind and spirit";
+
+
+                    if (cmbLocations.SelectedIndex.ToString() == "Shangri La")
+                    {
+                        //change background image to users newly selected location
+                        this.BackgroundImage = 0000000000000000000000;
+
+                        //update story for user
+                        lblStory.Text = "This is Shangri La, its time to be challenged!";
+
+                        if (cmbLocations.SelectedIndex.ToString() == "Shangri La")
+                        {
+                            //change background image to users newly selected location
+                            this.BackgroundImage = 000000000000000000000000000;
+
+                            //update story for user
+                            lblStory.Text = "There are no immediate threats in sight to be tested on..........";
+                            this.BackgroundImage = 000000000000000000000000000;
+
+                            //update story for user
+                            this.BackgroundImage = "The energy feels nourishing and good here;
+                            lblStory.Text = "It might be time to continue the journey, time to get moving!";
+
+                            //update story for user
+                            this.BackgroundImage = 00000000000000000000000000;
+                            lblStory.Text = "Wings flap and the portal opens";
+
+
+
+
+                        }
+                        else if (cmbLocations.SelectedIndex.ToString() == "Grasslands of Veda")
+                        {
+                            //change background image to users newly selected location
+                            this.BackgroundImage = 00000000000000000000000000;
+
+
+                            //update story for user
+                            lblStory.Text = "You are now back amongst the temples and chanting priests";
+
+
+                            //change background image to users newly selected location
+                            this.BackgroundImage = 00000000000000000000000000000;
+
+                            //update story for user
+                            lblStory.Text = "It is time to continue our journey throughout the Earth!";
+
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+            
+
+
+
+        
+
+        private void btnExplore_Click(object sender, EventArgs e)
+        {
+            //lets use a random number generator to simulate a dice roll in the RPG
+            Random chance = new Random();
+
+            //lets generate a number between 1 and 10
+            int eventRoll = chance.Next(1, 11);
+
+            //check number
+            if (eventRoll > 5)
+            {
+                //create positive experience in environment
+                lblStory.Text = "You found a Dragon Ball!!! You gain 5000 Gold Tokens!";
+
+                //Modify the amounts in users bank account
+                Gold = Gold + 20;
+
+                //Transitions Occur
+
+            }
+            else if (eventRoll <= 5)
+            {
+                // something negative happens! 
+                lblStory.Text = "The dragon is hit with a poisonous arrow, It loses some of its virtue and vigor!";
+                this.BackgroundImage = 0000000000000000000000000;
+
+                //This is a long process
+
+
+                this.BackgroundImage = 0000000000000000000000000;
+
+                this.BackgroundImage = 0000000000000000000000000;
+
+                this.BackgroundImage = 0000000000000000000000000;
+
+                //Dragon Entering
+
+                //Entrance to the Shangri La provides insights on the rest of the journey and what it requires
+                lblStory.Text = "Shangri La Portal";
+                this.BackgroundImage = 0000000000000000000000000;
+
+                //Now some of our users health increases with justice!
+                playerHealth = playerHealth + 20;
+
+                UpdateStats();
+
+                //The spirit grows and intensifies!!
+                lblStory.Text = "The Evolution Intensifies!!";
+                this.BackgroundImage = 000000000000000000000000;
+
+                //You gain health in the Shangri La!
+                lblStory.Text = "Health has increased with your wisdom and virtue";
+                this.BackgroundImage = 000000000000000000000;
+
+                playerHealth = playerHealth + 80;
+
+                //Refresh
+                UpdateStats();
+
+                //Has health dropped too low?
+                if (playerHealth <= 100) ;
+                {
+                    //Show messagebox if our player has expired
+                    MessageBox.Show("You have restored peace on a small segment of the Earth!!! Great Work!! Now Continue the work and journey onwards!");
+
+			//You have made it to the area to create the desert oasis!!
+			this.BackgroundImage = 00000000000000000000000;
+			lblStory.Text = "You have accomplished a major task this journey!!!! Yay!! Awesome Work!
+
+                    //Close App
+                    Application.Exit();
+                }
+
+                //
+
+            }
+
+        }
+
+        private void lblStory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStats_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+}
+
+        private void comboLocations_SelectedIndexChanged_1(object sender, EventArgs e)
+
+            // Lets make something positive happen in our user's environment
+            lblStory.Text = "You found a Dragon Ball! You keep it and get 5000 Gold tokens!";
+
+            //Modify the amount in our user's bank account
+            Gold = Gold + 5000;
+        }
+        else if (eventRoll <= 5)
+        {
+            //something negative happens to our user
+            lblStory.Text = "You have been shot by a poisonous arrow and lost some of your virtue.";
+
+            //Now it costs our user some of their health
+            playerHealth = playerHealth - 5;
+        }
+
+        // Refresh the display for our user
+        UpdateStats();
+
+        // Has our user player health dropped too low?
+        if(playerHealth <= 0)
+        {
+                // Show a messagebox if our player has expired
+
+            MessageBox        
+
+		//You have to return to the Shangri La!!
